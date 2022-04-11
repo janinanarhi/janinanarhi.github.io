@@ -1,0 +1,222 @@
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+
+<body>
+
+  <h1>♫ Musiikilliset arvoitukset ♫</h1>
+
+  <img id="TomGif" style="border-radius: 5px;"
+    src="https://thumbs.gfycat.com/MajesticFavoriteChital-size_restricted.gif" width="300" height="250"
+    alt="Tom soittamassa pianoa">
+
+  <p>Mitäköhän Tom on soittamassa?</p>
+
+  <div id="pianokappale">
+    <button type="button"
+      onclick="document.getElementById('pianokappale').innerHTML = 'Hungarian Rhapsody No.2<br>säveltänyt Franz Liszt'">
+      Katso vastaus</button></div><br>
+  <audio controls>
+    <source src="raps.hung.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <br>
+  <br>
+
+  <p style="font-size: 17px;">Esittele itsesi, niin päästään aloittamaan musiikillinen yhteismatka.</p><br>
+  <div>
+    <form id="syotaNimi">
+      <label for="name">Nimesi on</label>
+      <input type="text" id="name" name="name" placeholder="Kirjoita nimesi">
+      <input type="submit" value="Lähetä">
+    </form>
+  </div>
+  <div id="tervehdys"></div>
+  <br>
+
+  <h2><b>Pianotunti 1</b></h2>
+  Oletko tutkinut täyspitkän pianon koskettimistoa?<br>
+  Koskettimia on paljon ja niitä on kahdenlaisia: <b>valkoisia</b> ja <b>mustia</b>.<br>
+  Oletko koskaan laskenut niiden kokonaislukumäärän?
+  Entä paljonko on valkoisia tai mustia koskettimia?<br>Minäpä olen.<br>
+  Paina vastausnappeja ja katso.<br><br>
+  <div id="kaikkikoskettimet">
+    <button type="button" onclick="document.getElementById('kaikkikoskettimet').innerHTML = '88'">
+      Koskettimia yhteensä on...</button></div><br>
+  <div id="valkoisetkoskettimet">
+    <button type="button" onclick="document.getElementById('valkoisetkoskettimet').innerHTML = '52'">
+      Valkoisia koskettimia on...</button></div><br>
+  <div id="mustatkoskettimet">
+    <button type="button" onclick="document.getElementById('mustatkoskettimet').innerHTML = '36'">
+      Mustia koskettimia on...</button></div><br><br>
+
+
+  <h2><b>Pianotunti 2</b></h2>
+  <p>Musiikin kielessä aakkosia on vain <b>seitsemän</b>.<br>
+    Ne vain toistuvat samassa järjestyksessä alhaalla (vasemmalla) ja ylhäällä (oikealla) pianon koskettimistolla.
+  </p>
+  <img id="koskettimet" style="border-radius: 12px;" src="piano.jpg" alt="koskettimet">
+  <br><br>
+  Ensimmäiseltä valkoiselta koskettimelta vasemmalta (alimmat äänet)<br>
+  <span style="color:darkblue"><b>A H</b></span>
+  <span style="color:lightseagreen"><b>C D E F G A H</b></span>
+  <span style="color:magenta"><b>C D E F G A H</b></span>
+  <span style="color:olivedrab"><b>C D E F G A H</b></span>
+  <span style="color:black"><b>C D E F G A H</b></span>
+  <span style="color:orangered"><b>C D E F G A H</b></span>
+  <span style="color:slateblue"><b>C D E F G A H</b></span>
+  <span style="color:tan"><b>C D E F G A H</b></span>
+  <span style="color:maroon"><b>C</b></span><br>viimeisimpään valkoiseen koskettimeen oikealla (korkeimmat äänet).
+  <p>Kokeilitko jo soittaa? Oletan, että vastasit kyllä.<br>Jatketaan.
+  </p><br>
+
+
+  <h2><b>Pianotunti 3</b></h2>
+  Jotta piano tulisi tutuksi, kokeilepa löytää kaikki C:t koskettimistolla ensin oikealla kädellä sitten vasemmalla
+  kädellä. <br>
+  Varmasti onnistuit hienosti! Kokeile vielä löytää D:t, E:t, F:t, G:t, A:t ja H:t. Kehoitan käyttämään eri sormia.<br>
+  Tuntuuko piano jo tutummalta? Hyvä! Tästä on hyvä jatkaa.
+  <br>
+  <h3><b>Arvaatko mikä nuotti?</b></h3>
+  1.Mikä nuotti löytyy kahden mustan koskettimen oikealta puolelta? Onko se C, A vai E?
+  <br><br>
+  <div id="vastausonE">
+    <button type="button"
+      onclick="document.getElementById('vastausonE').innerHTML = `E on OIKEIN!<br><img class='hymiot' src='smiley.png' alt='hymiöpekut'>`">E</button>
+  </div><br>
+  <div id="vastausonC">
+    <button type="button" onclick="document.getElementById('vastausonC').innerHTML = 'Ups! Kokeile vielä.'">C</button>
+  </div><br>
+  <div id="vastausonA">
+    <button type="button" onclick="document.getElementById('vastausonA').innerHTML = 'Ups! Kokeile vielä.'">A</button>
+  </div><br>
+  2.Mikä nuotti löytyy kolmen mustan koskettimen ryhmästä 1. ja 2. (vasemmalta katsottuna) välistä? Onko se D, G vai H?
+  <br><br>
+  <div id="vastausonD">
+    <button type="button" onclick="document.getElementById('vastausonD').innerHTML = 'Ups! Kokeile vielä.'">D</button>
+  </div><br>
+  <div id="vastausonG">
+    <button type="button"
+      onclick="document.getElementById('vastausonG').innerHTML = `G on OIKEIN!<br><img class='hymiot' src='smiley.png' alt='hymiöpekut'>`">G</button>
+  </div><br>
+  <div id="vastausonH">
+    <button type="button" onclick="document.getElementById('vastausonH').innerHTML = 'Ups! Kokeile vielä.'">H</button>
+  </div><br><br>
+
+
+  <h2><b>Pianotunti 4</b></h2>
+  Nyt tutustutaan avaimiin. Ne avaavat meille musiikin ovet. Koska nyt instrumenttina meillä on piano, ja käsiä on kaksi, niin myös avaimia on kaksi.<br>
+  Keskellä oleva C-nuotti, jota vastapäätä istut kun istut keskellä instrumenttia, on se yhteinen avainten ovi. C-nuottiin käy sekä vasemman käden avain, <br>
+  että oikean käden avain. Kuitenkin kun kyseessä on ovi, niin sen takaa löytyy tilat, nuottien elintilat. Jos menemme vasemman käden kotiin, menemme <br>
+  vasempaan suuntaan koskettimistolla, ja alaspäin "kellariin". Äänet muuttuvat koko ajan alemmiksi ja möreämmiksi. Jos menemme oikean käden kotiin, <br>
+  menemme oikealle koskettimistolla, ja ylöspäin 1. tai 2. tai 3. tai 4. "kerrokseen". Äänet muuttuvat korkeammiksi.<br>
+  Oikean käden avainta kutsutaan G-avaimeksi. Vasemman käden avainta kutusutaan F-avaimeksi.<br>
+  Katso korteista kumpi on kumpi.<br><br>
+
+
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="G-avain.jpeg" alt="G-avain" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>G-avain, <br>oikean käden avain</h1>
+        </div>
+      </div>
+    </div> 
+  </div>
+<br>
+
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="F-avain.jpg" alt="F-avain" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>F-avain, <br>vasemman käden avain</h1>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <br><br>
+
+  <img id="nuotit" style="border-radius: 8px;" src="Nuotit.jpg" alt="nuotit nuottiviivastolla">
+  <br><br>
+  Huomaatko yllä olevasta esimerkistä jotain erikoista tai kenties jo tuttua? Kuten aiemmin mainitsin, vasemman ja oikean käden avaimilla on yhteinen nuotti, joka on C <br>
+  nimeltään. Tuosta esimerkistä sen näkee hyvin, koska se on samannäköinen apuviivalla oleva nuotti: vasemmalla kädellä se on nuottiviivaston <br>
+  yläpuolella, oikealla kädellä se on nuottiviivaston alapuolella.<br>
+  Osaatko nimetä nuotit aiempien pianotuntiemme avulla? Katso tarkkaan, huomaat, että osaat! Soita pianolla. <br>
+  Voit aloittaa soittamisen vasemmalla kädellä peukusta alaspäin (eli vasemmalle) keskellä olevasta <b>C:stä</b> seuraavasti (peukku on sormi 1, etusormi on 2 jne.): <br>
+  <b>1-2-3-(peukku ali)-1-2-3-4-5</b>.<br>
+  Samalla tavalla (sama sormitus) oikealla kädellä, <b>C:stä</b>, soita ylöspäin (oikealle).<br>
+  Onneksi olkoon! Pärjäsit todella hienosti!
+  <br><br>
+
+  <h2>Arvaatko?</h2>
+
+  Arvaatko miksi yhtä avainta kutsutaan F-avaimeksi ja toista avainta kutsutaan G-avaimeksi? Sinähän jo tiedät tarkkasilmäisenä mitä nuotteja nuottiviivastolla näet, <br>
+  osaatko päätellä, vihjaavatko avainten nimet johonkin...?
+  <br><br>
+  <div id="vastaus">
+    <button type="button"
+      onclick="document.getElementById('vastaus').innerHTML = `OIKEIN!!! <br>
+      <img class='hymiot' src='smiley.png' alt='hymiöpekut'><br>F-avain näyttää F-nuotin paikan (vasen käsi)! <br>G-avain näyttää G-nuotin paikan (oikea käsi)!<br>`">Katso vastaus</button>
+  </div><br>
+
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<label class="container">C
+      <input type="radio" checked="checked" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">A
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">E
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <input type="submit" value="Vastaa">-->
+
+
+
+<!--<p style="text-align: center">Mikä tämä on?</p>
+    <hr text-align="center" width="50%" color:black;>
+    <hr text-align="center" width="50%" color:black;>
+    <hr text-align="center" width="50%" color:black;>
+    <hr text-align="center" width="50%" color:black;>
+    <hr text-align="center" width="50%" color:black;>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Nuottiviivasto'">
+        Katso oikea vastaus</button>
+    <p id="demo"></p><br>-->
+
+
+<!--<form action="/action_page.php">
+    <input type="radio" name="vastaus" value="nuottiviivasto" checked> Nuottiviivasto<br>
+    <input type="radio" name="vastaus" value="viivain"> Viivain<br>
+    <input type="radio" name="vastaus" value="pata"> Pata<br><br>
+    <input type="submit" value="Suorita">
+  </form>-->
