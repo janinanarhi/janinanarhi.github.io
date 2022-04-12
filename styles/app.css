@@ -1,13 +1,15 @@
 @media only screen and (max-width: 600px) {
-    #koskettimet {
-      width: 100%;
-    }
+  #koskettimet {
+    width: 100%;
+  }
 }
+
 @media only screen and (max-width: 500px) {
-    #TomGif {
-        width: 100%;
-    }
+  #TomGif {
+    width: 100%;
+  }
 }
+
 @media only screen and (max-width: 600px) {
   #nuotit {
     width: 100%;
@@ -15,21 +17,24 @@
 }
 
 h1 {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-body { 
-    background-color: antiquewhite; 
-    text-align: center; 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    
+
+body {
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
 }
+
 .flip-container {
   display: flex;
   justify-content: center;
 }
-.flip-card { 
+
+.flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
@@ -43,14 +48,15 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);  
+  transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -76,7 +82,8 @@ body {
   display: flex;
   justify-content: center;
 }
-.flip-card { 
+
+.flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
@@ -90,14 +97,15 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);  
+  transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -119,7 +127,7 @@ body {
   transform: rotateY(180deg);
 }
 
-.hymiot{
+.hymiot {
   width: 50px;
 }
 
@@ -138,7 +146,7 @@ body {
     }
 
     /* The container */
-    /*.container {
+/*.container {
       display: block;
       position: relative;
       padding-left: 35px;
@@ -152,14 +160,14 @@ body {
     }
 
     /* Hide the browser's default radio button */
-    /*.container input {
+/*.container input {
       position: absolute;
       opacity: 0;
       cursor: pointer;
     }
 
     /* Create a custom radio button */
-    /*.checkmark {
+/*.checkmark {
       position: absolute;
       top: 0;
       left: 0;
@@ -170,29 +178,29 @@ body {
     }
 
     /* On mouse-over, add a grey background color */
-    /*.container:hover input~.checkmark {
+/*.container:hover input~.checkmark {
       background-color: #ccc;
     }
 
     /* When the radio button is checked, add a blue background */
-    /*.container input:checked~.checkmark {
+/*.container input:checked~.checkmark {
       background-color: #2196F3;
     }
 
     /* Create the indicator (the dot/circle - hidden when not checked) */
-    /*.checkmark:after {
+/*.checkmark:after {
       content: "";
       position: absolute;
       display: none;
     }
 
     /* Show the indicator (dot/circle) when checked */
-    /*.container input:checked~.checkmark:after {
+/*.container input:checked~.checkmark:after {
       display: block;
     }
 
     /* Style the indicator (dot/circle) */
-    /*.container .checkmark:after {
+/*.container .checkmark:after {
       top: 9px;
       left: 9px;
       width: 8px;
