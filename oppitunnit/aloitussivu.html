@@ -1,0 +1,50 @@
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles/app.css">
+</head>
+
+
+<body>
+
+  <header><h1>♫ Musiikilliset arvoitukset ♫</h1></header>
+
+  <img id="TomGif" style="border-radius: 5px;"
+    src="../kuvat/Cat.gif" width="300" height="250"
+    alt="Tom soittamassa pianoa">
+
+  <p>Mitäköhän Tom on soittamassa?</p>
+ 
+
+  <div id="pianokappale">
+    <button type="button" 
+      onclick="document.getElementById('pianokappale').innerHTML = 'Hungarian Rhapsody No.2<br>säveltänyt Franz Liszt'">
+      Katso vastaus</button></div><br>
+  <audio controls>
+    <source src="../sounds/raps.hung.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <br>
+  <br>
+
+  <p style="font-size: 17px;">Esittele itsesi, niin päästään aloittamaan musiikillinen yhteismatka.</p><br>
+  <div>
+    <form id="syotaNimi">
+      <label for="name">Nimesi on</label>
+      <input type="text" id="name" name="name" placeholder="Kirjoita nimesi">
+      <input type="submit" value="Lähetä">
+    </form>
+  </div>
+  <div id="tervehdys"></div>
+  <br>
+  
+  <a href="../index.html">Etusivu</a>
+  <a href="oppitunti1.html">Oppitunti 1</a>
+  
+  <script type="text/javascript" src="../scripts/app.js"></script>
+</body>
+
+</html>

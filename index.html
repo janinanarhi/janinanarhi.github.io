@@ -4,91 +4,36 @@
   <meta charset="UTF-8">
   <title>App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/app.css">
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
 
-
 <body>
-
-  <header><h1>♫ Musiikilliset arvoitukset ♫</h1></header>
-
-  <img id="TomGif" style="border-radius: 5px;"
-    src="kuvat/etusivu/Cat.gif" width="300" height="250"
-    alt="Tom soittamassa pianoa">
-
-  <p>Mitäköhän Tomppa on soittamassa?</p>
- 
-
-  <div id="pianokappale">
-    <button type="button" style="background-color: green"  
-      onclick="document.getElementById('pianokappale').innerHTML = 'Hungarian Rhapsody No.2<br>säveltänyt Franz Liszt'">
-      Katso vastaus</button></div><br>
-  <audio controls>
-    <source src="sounds/raps.hung.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <br>
-  <br>
-
-  <p style="font-size: 17px;">Esittele itsesi, niin päästään aloittamaan musiikillinen yhteismatka.</p><br>
-  <div>
-    <form id="syotaNimi">
-      <label for="name">Nimesi on</label>
-      <input type="text" id="name" name="name" placeholder="Kirjoita nimesi">
-      <input type="submit" value="Lähetä">
-    </form>
-  </div>
-  <div id="tervehdys"></div>
-  <br>
   
-  <a href="oppitunti1.html">Oppitunti 1</a>
+  <div class="bg-img">
+    
+    <div class="container">
+      <div class="topnav">
+        <a href="#" class="title">Etusivu</a>
+        <a href="../cv/cv.html" class="title">CV</a>
+        <div class="dropdown">
+          <button class="dropbtn title">Pianokoulu<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="../oppitunnit/aloitussivu.html">Aloitussivu</a>
+            <a href="../oppitunnit/oppitunti1.html">Oppitunti 1</a>
+            <a href="../oppitunnit/oppitunti2.html">Oppitunti 2</a>
+            <a href="../oppitunnit/oppitunti3.html">Oppitunti 3</a>
+            <a href="../oppitunnit/oppitunti4.html">Oppitunti 4</a>
+          </div>
+        </div>
+        <a href="#" class="title">Julkaisut</a>
+        <a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a>
+      </div>
+    </div>
+  <h1>Janinan pianostudio</h1>
+  
+  </div>
 
 
-  <script type="text/javascript" src="scripts/app.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-<!--<label class="container">C
-      <input type="radio" checked="checked" name="radio">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">A
-      <input type="radio" name="radio">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">E
-      <input type="radio" name="radio">
-      <span class="checkmark"></span>
-    </label>
-    <input type="submit" value="Vastaa">-->
-
-
-
-<!--<p style="text-align: center">Mikä tämä on?</p>
-    <hr text-align="center" width="50%" color:black;>
-    <hr text-align="center" width="50%" color:black;>
-    <hr text-align="center" width="50%" color:black;>
-    <hr text-align="center" width="50%" color:black;>
-    <hr text-align="center" width="50%" color:black;>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Nuottiviivasto'">
-        Katso oikea vastaus</button>
-    <p id="demo"></p><br>-->
-
-
-<!--<form action="/action_page.php">
-    <input type="radio" name="vastaus" value="nuottiviivasto" checked> Nuottiviivasto<br>
-    <input type="radio" name="vastaus" value="viivain"> Viivain<br>
-    <input type="radio" name="vastaus" value="pata"> Pata<br><br>
-    <input type="submit" value="Suorita">
-  </form>-->

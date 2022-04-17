@@ -8,7 +8,7 @@ body {
 
 .bg-img {
   /* The image used */
-  background-image: url("../kuvat/kokeiluja/taustakuvaaloitus.jpg");
+  background-image: url("../kuvat/taustakuvaaloitus.jpg");
 
   height: 100%;
 
@@ -40,7 +40,6 @@ body {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 17px;
 }
 
@@ -58,7 +57,6 @@ body {
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
 }
 
 /* The dropdown container */
@@ -79,6 +77,7 @@ body {
   /* Important for vertical align on mobile phones */
   margin: 0;
   /* Important for vertical align on mobile phones */
+  cursor: pointer;
 }
 
 /* Dropdown content (hidden by default) */
@@ -116,9 +115,13 @@ h1 {
   text-align: center;
   width: 100%;
   margin: 0px auto;
-  font-size: 50px;
   letter-spacing: 1px;
   top: 20%;
   position: absolute;
   margin-top: -40px;
+  font-size: 5vw;
+}
+
+.title {
+  text-decoration: none;
 }
