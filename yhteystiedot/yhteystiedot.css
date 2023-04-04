@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .bg-img { 
+    /* The image used */
+    background-image: url("/kuvat/taustakuvaaloitus.jpg");
+    height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    /* position: relative; */
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: antiquewhite;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    cursor: pointer;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: red;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  h1 {
+    color: antiquewhite;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    letter-spacing: 1px;
+    top: 20%;
+    position: absolute;
+    margin-top: -40px;
+    font-size: 5vw;
+  }
+  
+  .title {
+    text-decoration: none;
+  }
+
+  #yhteystieto {
+    background-color: antiquewhite;
+    top: 250px;
+    text-align: center;
+    background: orange;
+    height: 100px;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    padding: 10px;
+    border: orangered 5px solid;
+    
+}
+#yhteys {
+    text-decoration: underline;
+    color:antiquewhite;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pianostudio Janina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../aloitussivu/aloitussivu.css">
+</head>
+
+
+<body>
+  <div class="bg-img">
+    <div class="container">
+
+      <div class="topnav">
+        <a href="#" class="title" id="etusivu">Etusivu</a>
+        <a href="../cv/cv.html" class="title">CV</a>
+        <!--<a href="../aloitussivu/aloitussivu.html" class="title" id="pianokoulu">Pianokoulu</a>-->
+        <div class="dropdown">
+          <button class="dropbtn title" id="pianokoulu">Pianokoulu</button>
+          <div class="dropdown-content">
+            <a href="../oppitunnit/oppitunti_1/oppitunti_1.html">Oppitunti 1</a>
+            <a href="../oppitunnit/oppitunti_2/oppitunti_2.html">Oppitunti 2</a>
+            <a href="../oppitunnit/oppitunti_3/oppitunti_3.html">Oppitunti 3</a>
+            <a href="../oppitunnit/oppitunti_4/oppitunti_4.html">Oppitunti 4</a>
+          </div>
+        </div>
+        <a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a>
+        <a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <header>
+    <h1>Pianokoulu</h1>
+  </header>
+
+  <div id="aloitussivu">
+    <div><h2>♫ Musiikilliset arvoitukset ♫</h2></div>
+    <img id="TomGif" style="border-radius: 5px;" src="../aloitussivu/kuvat_toiminta/Cat.gif" width="300" height="250"
+      alt="Tom soittamassa pianoa">
+
+    <p>Mitäköhän Tom on soittamassa?</p>
+
+
+    <div id="pianokappale">
+      <button type="button"
+        onclick="document.getElementById('pianokappale').innerHTML = 'Hungarian Rhapsody No.2<br>säveltänyt Franz Liszt'">
+        Katso vastaus</button>
+    </div><br>
+
+    <audio controls>
+      <source src="../aloitussivu/kuvat_toiminta/raps.hung.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <br>
+
+    <p style="font-size: 17px;">Esittele itsesi, niin päästään aloittamaan musiikillinen yhteismatka.</p><br>
+    <div>
+      <form id="syotaNimi">
+        <label for="name">Nimesi on</label>
+        <input type="text" id="name" name="name" placeholder="Kirjoita nimesi">
+        <input type="submit" value="Lähetä">
+      </form>
+    </div>
+    <div id="tervehdys"></div>
+    <br>
+
+  </div>
+
+  <script type="text/javascript" src="aloitussivu.js"></script>
+</body>
+
+</html>

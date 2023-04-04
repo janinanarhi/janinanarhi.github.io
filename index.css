@@ -1,16 +1,11 @@
-body {
-  font-family:'Courier New', Courier, monospace;
-}
-
 * {
   box-sizing: border-box;
 }
 
-.bg-img {
+.bg-img { 
   /* The image used */
-  background-image: url("../kuvat/taustakuvaaloitus.jpg");
-
-  height: 100%;
+  background-image: url("/kuvat/taustakuvaaloitus.jpg");
+  height: 100vh;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -20,6 +15,11 @@ body {
   /* Needed to position the navbar */
   position: relative;
 }
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 
 /* Position the navbar container inside the image */
 .container {
@@ -37,7 +37,7 @@ body {
 /* Navbar links */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  /*color: #f2f2f2;*/
   text-align: center;
   padding: 14px 16px;
   font-size: 17px;
@@ -54,7 +54,7 @@ body {
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  /*color: antiquewhite;*/
   text-align: center;
   padding: 14px 16px;
 }
@@ -70,7 +70,7 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  /*color: antiquewhite;*/
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -93,7 +93,7 @@ body {
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: white;
+  color: antiquewhite;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -124,4 +124,10 @@ h1 {
 
 .title {
   text-decoration: none;
+  color:antiquewhite;
+}
+
+#etusivu {
+  text-decoration: underline;
+  color:antiquewhite;
 }
