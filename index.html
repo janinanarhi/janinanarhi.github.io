@@ -6,36 +6,48 @@
   <title>Pianostudio Janina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/index.css">
+
 </head>
 
 <body>
-  
+
   <div class="bg-img">
-    
-    <div class="container">
-      <div class="topnav">
-        <a href="#" class="title" id="etusivu">Etusivu</a>
-        <a href="../cv/cv.html" class="title">CV</a>
-        <a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title">Pianokoulu</a>
-        <!--<div class="dropdown">
-          <button class="dropbtn title"><a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title">Pianokoulu</a><i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-            <a href="../oppitunnit/oppitunti_1/oppitunti_1.html">Oppitunti 1</a>
-            <a href="../oppitunnit/oppitunti_2/oppitunti_2.html">Oppitunti 2</a>
-            <a href="../oppitunnit/oppitunti_3/oppitunti_3.html">Oppitunti 3</a>
-            <a href="../oppitunnit/oppitunti_4/oppitunti_4.html">Oppitunti 4</a>
-          </div>
-        </div>-->
-        <a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a>
-        <a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a>
+    <header>
+      <div id="brand">Pianostudio Janina</div>
+      <nav>
+        <ul>
+          <li><a href="#" class="title" id="etusivu">Etusivu</a></li>
+          <li><a href="../cv/cv.html" class="title">CV</a></li>
+          <li><a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title">Pianokoulu</a></li>
+          <li><a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a></li>
+          <li><a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="#" class="title" id="etusivu">Etusivu</a></li>
+          <li><a href="../cv/cv.html" class="title">CV</a></li>
+          <li><a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title">Pianokoulu</a></li>
+          <li><a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a></li>
+          <li><a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a></li>
+        </ul>
       </div>
+    </header>
+
+
+    <div class="box">
+      <div id="otsikko">Tervetuloa sivulleni!</div>
+      <div id="esittely">Olen Janina Närhi, pianonsoiton opettaja, korrepetiittori, ja tuleva ohjelmoija.</div>
     </div>
-    
-  <h1>Pianostudio Janina</h1>
-  
+
   </div>
 
-
+  <script type="text/javascript" src="/index.js"></script>
 </body>
 
 </html>

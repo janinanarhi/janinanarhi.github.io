@@ -5,74 +5,101 @@
   <meta charset="UTF-8">
   <title>Pianostudio Janina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../aloitussivu/aloitussivu.css">
+  <link rel="stylesheet" type="text/css" href="aloitussivu.css">
 </head>
 
 
 <body>
+
   <div class="bg-img">
-    <div class="container">
 
-      <div class="topnav">
-        <a href="#" class="title" id="etusivu">Etusivu</a>
-        <a href="../cv/cv.html" class="title">CV</a>
-        <!--<a href="../aloitussivu/aloitussivu.html" class="title" id="pianokoulu">Pianokoulu</a>-->
-        <div class="dropdown">
-          <button class="dropbtn title" id="pianokoulu">Pianokoulu</button>
-          <div class="dropdown-content">
-            <a href="../oppitunnit/oppitunti_1/oppitunti_1.html">Oppitunti 1</a>
-            <a href="../oppitunnit/oppitunti_2/oppitunti_2.html">Oppitunti 2</a>
-            <a href="../oppitunnit/oppitunti_3/oppitunti_3.html">Oppitunti 3</a>
-            <a href="../oppitunnit/oppitunti_4/oppitunti_4.html">Oppitunti 4</a>
+
+    <header>
+      <div id="brand">Pianostudio Janina</div>
+      <nav>
+        <ul>
+          <li><a href="/index.html" class="title">Etusivu</a></li>
+          <li><a href="/cv/cv.html" class="title">CV</a></li>
+          <!--<li><a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title" id="pianokoulu">Pianokoulu</a></li>-->
+          <div class="dropdown">
+            <button class="dropbtn title" id="pianokoulu">Pianokoulu</button>
+            <div class="dropdown-content">
+              <a href="../oppitunti_1/oppitunti_1.html">Oppitunti 1</a>
+              <a href="../oppitunti_2/oppitunti_2.html">Oppitunti 2</a>
+              <a href="../oppitunti_3/oppitunti_3.html">Oppitunti 3</a>
+              <a href="../oppitunti_4/oppitunti_4.html">Oppitunti 4</a>
+            </div>
           </div>
-        </div>
-        <a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a>
-        <a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a>
+          <li><a href="/julkaisut/julkaisut.html" class="title">Julkaisut</a></li>
+          <li><a href="/yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/index.html" class="title">Etusivu</a></li>
+          <li><a href="/cv/cv.html" class="title">CV</a></li>
+          <!--<li><a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title">Pianokoulu</a></li>-->
+          <div class="dropdown">
+            <button class="dropbtn title" id="pianokoulu">Pianokoulu</button>
+            <div class="dropdown-content">
+              <a href="../oppitunti_1/oppitunti_1.html">Oppitunti 1</a>
+              <a href="../oppitunti_2/oppitunti_2.html">Oppitunti 2</a>
+              <a href="../oppitunti_3/oppitunti_3.html">Oppitunti 3</a>
+              <a href="../oppitunti_4/oppitunti_4.html">Oppitunti 4</a>
+            </div>
+          </div>
+          <li><a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a></li>
+          <li><a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a></li>
+        </ul>
       </div>
+    </header>
+
+    <div class="box">
+      <div id="otsikko">Pianokoulu</div>
+      <div class="alaotsikko">♫ Musiikilliset arvoitukset ♫</div>
+      <div class="teksti">Mitäköhän Tom on soittamassa?</div>
+        <img id="TomGif" style="border-radius: 5px;" src="../aloitussivu/kuvat_toiminta/Cat.gif" width="300" height="250"
+        alt="Tom soittamassa pianoa">
+        <br>
+        <div id="pianokappale">
+        <button type="button" 
+          onclick="document.getElementById('pianokappale').innerHTML = 'Hungarian Rhapsody No.2<br>säveltänyt Franz Liszt'">
+          Katso vastaus</button>
+      </div><br>
+      <audio id="controls" controls>
+        <source src="../aloitussivu/kuvat_toiminta/raps.hung.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      
+      <div class="teksti">
+      Kerro nimesi ja ikäsi, niin päästään aloittamaan musiikillinen yhteismatka.<br><br>
+      <div>
+        <form id="syotaTiedot">
+          <label for="name">Nimesi on</label>
+          <input type="text" id="name" name="name" placeholder="Kirjoita nimesi">
+          <label for="age">Ikäsi on</label>
+          <input type="number" id="age" name="age" placeholder="Kirjoita ikäsi">
+          <br>
+          <br>
+          <input type="submit" value="Lähetä" id="nameAgeButton">
+        </form>
+      </div>
+      <br>
+      <div id="tervehdys"></div>
+      <br>
 
     </div>
-
-  </div>
-
-
-  <header>
-    <h1>Pianokoulu</h1>
-  </header>
-
-  <div id="aloitussivu">
-    <div><h2>♫ Musiikilliset arvoitukset ♫</h2></div>
-    <img id="TomGif" style="border-radius: 5px;" src="../aloitussivu/kuvat_toiminta/Cat.gif" width="300" height="250"
-      alt="Tom soittamassa pianoa">
-
-    <p>Mitäköhän Tom on soittamassa?</p>
-
-
-    <div id="pianokappale">
-      <button type="button"
-        onclick="document.getElementById('pianokappale').innerHTML = 'Hungarian Rhapsody No.2<br>säveltänyt Franz Liszt'">
-        Katso vastaus</button>
-    </div><br>
-
-    <audio controls>
-      <source src="../aloitussivu/kuvat_toiminta/raps.hung.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <br>
-    <br>
-
-    <p style="font-size: 17px;">Esittele itsesi, niin päästään aloittamaan musiikillinen yhteismatka.</p><br>
     <div>
-      <form id="syotaNimi">
-        <label for="name">Nimesi on</label>
-        <input type="text" id="name" name="name" placeholder="Kirjoita nimesi">
-        <input type="submit" value="Lähetä">
-      </form>
+      <p style="font-size: 30px;">Oppitunti 1</p>
+      <span style='font-size:80px;'> &#8680;</span>
     </div>
-    <div id="tervehdys"></div>
-    <br>
 
   </div>
-
   <script type="text/javascript" src="aloitussivu.js"></script>
 </body>
 

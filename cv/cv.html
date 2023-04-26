@@ -5,72 +5,74 @@
     <meta charset="UTF-8">
     <title>Pianostudio Janina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../cv/cv.css">
+    <link rel="stylesheet" type="text/css" href="/cv/cv.css">
 </head>
-
 
 <body>
     <div class="bg-img">
-    
-        <div class="container">
-          <div class="topnav">
-            <a href="../index.html" class="title">Etusivu</a>
-            <a href="#" class="title" id="cv">CV</a>
-            <div class="dropdown">
-              <button class="dropbtn title"><a href="../pianokoulu/aloitussivu/aloitussivu.html">Pianokoulu</a><i class="fa fa-caret-down"></i></button>
-              <div class="dropdown-content">
-                <a href="../oppitunnit/aloitussivu/aloitussivu.html">Aloitussivu</a>
-                <a href="../oppitunnit/oppitunti_1/oppitunti_1.html">Oppitunti 1</a>
-                <a href="../oppitunnit/oppitunti_2/oppitunti_2.html">Oppitunti 2</a>
-                <a href="../oppitunnit/oppitunti_3/oppitunti_3.html">Oppitunti 3</a>
-                <a href="../oppitunnit/oppitunti_4/oppitunti_4.html">Oppitunti 4</a>
-              </div>
+        <header>
+            <div id="brand">Pianostudio Janina</div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" class="title">Etusivu</a></li>
+                    <li><a href="#" class="title" id="cv">CV</a></li>
+                    <li><a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title">Pianokoulu</a></li>
+                    <li><a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a></li>
+                    <li><a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+
+
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/index.html" class="title" id="etusivu">Etusivu</a></li>
+                    <li><a href="#" class="title" id="cv">CV</a></li>
+                    <li><a href="../pianokoulu/aloitussivu/aloitussivu.html" class="title">Pianokoulu</a></li>
+                    <li><a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a></li>
+                    <li><a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a></li>
+                </ul>
             </div>
-            <a href="../julkaisut/julkaisut.html" class="title">Julkaisut</a>
-            <a href="../yhteystiedot/yhteystiedot.html" class="title">Yhteystiedot</a>
-          </div>
+        </header>
+
+        <div class="box">
+            <div id="otsikko">CV</div>
+            <div class="alaotsikko">Koulutus</div>
+            <div class="teksti">&#8277 Helsinki Business College, datanomi 2020 <br>
+                &#8277 Sibelius-Akatemia, maisteriopinnot laulumusiikin koulutusohjelma / korrepetitio 2009 - 2012<br>
+                &#8277 Metropolia Ammattikorkeakoulu, erikoistumisopinnot 2009<br>
+                &#8277 Hochschule für Musik Carl Maria von Weber Dresden, Theaterkorrepetition 2007-2008<br>
+                &#8277 Metropolia Ammattikorkeakoulu, musiikkipedagogin kandidaattitutkinto (piano) 2001 - 2006<br>
+                &#8277 Sibelius-Akatemia, 1997 - 2001 nuoriso-osasto, piano<br>
+                &#8277 Sibelius-lukio 1998 - 2001
+            </div>
+            <div class="alaotsikko">Työkokemus</div>
+            <div class="teksti">&#8277 Espoon työväenopisto Omnia, pianonsoiton opettaja 2021 -<br>
+                &#8277 Kallion musiikkikoulu, kotisivujen muokkaus WordPressillä 2020 -<br>
+                &#8277 Suomen Beniamino Gigli-seura, apulaistuottajana 2019<br>
+                &#8277 Edition Tilli Oy, nuottien oikoluku 2017 -<br>
+                &#8277 Kallion musiikkikoulu, pianonsoiton opettaja, säestäjä 2013 -<br>
+                &#8277 Musiikkiopisto Juvenalia, korrepetiittori/säestäjä 2011 - 2012<br>
+                &#8277 Keravan musiikkikeskus MultiKulti pianonsoiton opettaja, musiikkivalmennuksen ja musiikin
+                perusteiden opettaja 2008 - 2009<br>
+                &#8277 Suomen Kuoro-opisto pianonsoiton opettaja 2008 - 2009<br>
+                &#8277 Helsingin Laulustudio pianonsoiton opettaja, vapaa-säestyksen opettaja ja säestäjä 2006 - 2007<br>
+                &#8277 Suomen Kansallisooppera kielenvalmentaja (venäjä) Patarouva-oopperaproduktiossa 2006<br>
+                &#8277 Ammattikorkeakoulu Metropolia korrepetiittori oopperaproduktiossa Hannu ja Kerttu 2006<br>
+                &#8277 Pääkaupunkiseudun musiikkiopistoissa pianonsoiton opettajan sijaisuuksia 2001 -
+            </div>
+            <div class="alaotsikko">Projektit</div>
+            <div class="teksti">Kamarikesä "Elääkö Stalin" -kamariooppera korrepetiittori 2011 - 2012</div>
+            
+            <div class="alaotsikko">Kielitaito</div>
+            <div id="kielet">venäjä äidinkieli<br>suomi erinomainen<br>englanti hyvä
+            </div>
         </div>
-    <header>
-        <h1>CV</h1>
-    </header>
-    <div class="box" id="koulutus">
-        <h2>Koulutus</h2>
-        <p>
-            Helsinki Business College, datanomi 2020 <br>
-            Sibelius-Akatemia, maisteriopinnot laulumusiikin koulutusohjelma/ korrepetitio 2009 - 2012<br>
-            Metropolia Ammattikorkeakoulu, erikoistumisopinnot 2009<br>
-            Hochschule für Musik Carl Maria von Weber Dresden, Theaterkorrepetition 2007-2008<br>
-            Metropolia Ammattikorkeakoulu, musiikkipedagogin kandidaattitutkinto (piano) 2001 - 2006<br>
-            Sibelius-Akatemia, 1997 - 2001 nuoriso-osasto, piano<br>
-            Sibelius-lukio 1998 - 2001<br>
-        </p>
-        <h2>Työkokemus</h2>
-        <p>
-            Espoon työväenopisto Omnia, pianonsoiton opettaja 2021 -<br>
-            Kallion musiikkikoulu, kotisivujen muokkaus WordPressillä 2020 -<br>
-            Suomen Beniamino Gigli-seura, apulaistuottajana 2019<br>
-            Edition Tilli Oy, nuottien oikoluku 2017 -<br>
-            Kallion musiikkikoulu, pianonsoiton opettaja, säestäjä 2013 -<br>
-            Musiikkiopisto Juvenalia, korrepetiittori/säestäjä 2011 - 2012<br>
-            Keravan musiikkikeskus MultiKulti pianonsoiton opettaja, musiikkivalmennuksen ja musiikin
-            perusteiden opettaja 2008 - 2009<br>
-            Suomen Kuoro-opisto pianonsoiton opettaja 2008 - 2009<br>
-            Helsingin Laulustudio pianonsoiton opettaja, vapaa-säestyksen opettaja ja säestäjä 2006 - 2007<br>
-            Suomen Kansallisooppera kielenvalmentaja (venäjä) Patarouva-oopperaproduktiossa 2006<br>
-            Ammattikorkeakoulu Metropolia korrepetiittori oopperaproduktiossa Hannu ja Kerttu 2006<br>
-            Pääkaupunkiseudun musiikkiopistoissa pianonsoiton opettajan sijaisuuksia 2001 -
-        </p>
-        <h2>Projektit</h2>
-        <p>
-            Kamarikesä "Elääkö Stalin" -kamariooppera korrepetiittori 2011 - 2012
-        </p>
-        <h2>Kielitaito</h2>
-        <p>
-            venäjä äidinkieli<br>
-            suomi erinomainen<br>
-            englanti hyvä
-        </p>
     </div>
+
+    <script type="text/javascript" src="/index.js"></script>
 </body>
 
 </html>

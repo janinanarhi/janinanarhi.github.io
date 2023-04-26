@@ -1,133 +1,189 @@
 * {
   box-sizing: border-box;
-}
-
-.bg-img { 
-  /* The image used */
-  background-image: url("/kuvat/taustakuvaaloitus.jpg");
-  height: 100vh;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* Needed to position the navbar */
-  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: 'Courier New', Courier, monospace;
+  color: antiquewhite;
+  background-image: url("/kuvat/taustakuvaaloitus.jpg");
 }
 
-
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
+.bg-img {
+  height: 100vh;
+  width: 100%;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-/* The navbar */
-.topnav {
+header a {
+  text-decoration: none;
+  font-size: 17px;
+}
+ header{
+  padding: 0 20px;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+ }
+
+ #brand {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: aquamarine;
+}
+ 
+/*nav {
   overflow: hidden;
   background-color: black;
+  border-radius: 5px;
+  position: absolute;
+
+  z-index: 1;
+  margin: 20px;
+  width: auto;
+
 }
 
-/* Navbar links */
-.topnav a {
+nav a {
   float: left;
-  /*color: #f2f2f2;*/
   text-align: center;
   padding: 14px 16px;
   font-size: 17px;
-}
-
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  /*color: antiquewhite;*/
-  text-align: center;
-  padding: 14px 16px;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  /*color: antiquewhite;*/
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  /* Important for vertical align on mobile phones */
-  margin: 0;
-  /* Important for vertical align on mobile phones */
-  cursor: pointer;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
   color: antiquewhite;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: red;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-h1 {
-  color: antiquewhite;
-  text-align: center;
-  width: 100%;
-  margin: 0px auto;
-  letter-spacing: 1px;
-  top: 20%;
-  position: absolute;
-  margin-top: -40px;
-  font-size: 5vw;
 }
 
 .title {
   text-decoration: none;
-  color:antiquewhite;
-}
+  color: antiquewhite;
+}*/
 
 #etusivu {
   text-decoration: underline;
+  color: antiquewhite;
+}
+
+.box {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.box div {
+  width: 20em;
+}
+
+#otsikko {
+  font-size: 5vw;
+  font-weight: bold;
+  margin-bottom: 150px;
+  text-shadow: 1px 1px 2px black, 5px 5px 35px blue, 0 0 5px brown;
+}
+#esittely {
+  background-color: rgb(0 0 0/ 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex: content;
+  font-size: 1.7vw;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: antiquewhite;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul a {
   color:antiquewhite;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: black;
+  height: fit-content;
+  
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+  #esittely {
+    font-size: 15px;
+    margin: auto;
+  }
+
 }

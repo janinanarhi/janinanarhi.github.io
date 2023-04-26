@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .bg-img { 
+    /* The image used */
+    background-image: url("/kuvat/taustakuvaaloitus.jpg");
+    height: 100vh;
+    width: 100%;
+    border: none;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  /* Position the navbar container inside the image */
+  .container {
+    /*position: absolute;*/
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    margin: 20px;
+    width: auto;
+    
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+  h1 {
+    color: antiquewhite;
+    text-align: center;
+    width: 100%;
+    /*padding-top: 100px;
+    padding-bottom: 50px;*/
+    margin: 0px auto;
+    letter-spacing: 1px;
+    /*position: relative;*/
+    position: absolute;
+    top: 10%;
+    font-size: 5vw;
+  }
+  
+  .title {
+    text-decoration: none;
+    color:antiquewhite;
+  }
+  
+  #julkaisut {
+    text-decoration: underline;
+    color:antiquewhite;
+  }
+
+  #container_julkaisut {
+    /*position: relative;*/
+    position: absolute;
+    top: 30%;
+    /*background-color: lightgoldenrodyellow;*/
+    border: orange 5px solid;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+  }
+
+  #item1 {
+    pointer: cursor;
+  }
